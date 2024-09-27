@@ -132,5 +132,7 @@ RUN chmod 700 /entrypoint.sh
 
 EXPOSE 8069 22
 
+RUN apt-get install libmagic1 -y
+
 ENTRYPOINT [ "/entrypoint.sh" ]
 
